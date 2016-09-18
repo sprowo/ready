@@ -1,0 +1,3 @@
+<!ELEMENT test-datas (test-data+)>
+        <!ELEMENT test-data ANY>
+        <!ATTLIST test-data id  ID #REQUIRED>

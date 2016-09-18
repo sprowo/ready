@@ -1,8 +1,8 @@
 package com.prowo.persist;
 
-import java.io.Serializable;
-
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
+
+import java.io.Serializable;
 
 public abstract class BaseVO implements Serializable {
 
