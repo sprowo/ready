@@ -12,7 +12,9 @@
         <module>ready-ymlchain</module>
         <module>ready-dynamic-webext</module>
         <module>ready-test-base</module>
-    <module>ready-persist</module>
+        <module>ready-persist</module>
+    <module>ready-classloader</module>
+    <module>ready-dataloader</module>
   </modules>
 
     <properties>
@@ -100,6 +102,17 @@
             <type>jar</type>
         </dependency>
         <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jms</artifactId>
+            <version>${spring-version}</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-redis</artifactId>
+            <version>1.7.2.RELEASE</version>
+        </dependency>
+        <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
             <version>3.2.1</version>
@@ -113,6 +126,11 @@
             <groupId>commons-beanutils</groupId>
             <artifactId>commons-beanutils</artifactId>
             <version>1.7.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.persistence</groupId>
+            <artifactId>javax.persistence</artifactId>
+            <version>2.1.0</version>
         </dependency>
     </dependencies>
 

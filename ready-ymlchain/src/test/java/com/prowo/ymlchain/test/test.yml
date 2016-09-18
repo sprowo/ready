@@ -1,0 +1,24 @@
+start: Test1.method1
+
+error: Test2.method2
+
+exception: Test2.method2
+
+chainMaps:
+    Test1.doTask1:
+      ok:  Test1.method1
+      
+    Test1.method1:
+       ng:   Test1.method2
+       ok:   Test2.method1
+    
+    Test1.method2:
+        ok:    Test2.method2
+      
+classMap:
+    Test1 :     testp.Test1
+    Test2 : testp.Test2
+configMap:
+    config1: 100000999999999
+    
+    
